@@ -1,0 +1,35 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 800px;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(197, 132, 132);
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 100px);
+    background-color: green;
+    transition: all 1s ease;
+}
+
+.left {
+    left: 50px;
+}
+
+.active {
+    left: calc(50% - 100px);
+}
+
+.right {
+    left: calc(50% + 100px + 50px);
+}
+
+.hidden {
+    opacity: 0;
+    left: calc(50% + 100px + 50px);
+}
+
